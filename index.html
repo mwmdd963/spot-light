@@ -27,14 +27,14 @@
             <button class="text-white hover:text-pink-600 transition">NL|EN</button>
         </div>
 
-        <!-- زر الهمبرغر: بس على الموبايل -->
+
         <button id="menuBtn"
             class="md:hidden text-white bg-black/60 rounded-xl w-10 h-10 flex items-center justify-center">
             <i class="fa-solid fa-bars"></i>
         </button>
     </header>
 
-    <!-- قائمة الموبايل -->
+
     <div id="mobileMenu"
         class="hidden fixed top-0 right-0 z-[60] w-64 h-screen bg-linear-to-b from-[#C2185B] to-[#7A1040] p-8 flex-col gap-6 text-white md:!hidden">
         <button id="closeBtn" class="self-end text-2xl"><i class="fa-solid fa-xmark"></i></button>
@@ -80,7 +80,7 @@
 
         </div>
 
-        <!-- الكروت: صف عادي على الموبايل، absolute من الايباد وطالع -->
+
         <div class="flex justify-center gap-2 px-2 pb-6 md:contents">
             <div
                 class="bg-white w-28 md:w-40 h-16 rounded-[8px] flex items-center justify-start gap-2 md:gap-3 p-1 px-2 shadow-[0_10px_30px_rgba(0,0,0,0.6)] md:absolute md:top-42 md:left-22 ">
@@ -327,28 +327,7 @@
         </div>
     </footer>
 
-    <script>
-        // منيو الموبايل
-        const menu = document.getElementById('mobileMenu');
-        document.getElementById('menuBtn').onclick = () => { menu.classList.remove('hidden'); menu.classList.add('flex'); };
-        document.getElementById('closeBtn').onclick = () => { menu.classList.add('hidden'); menu.classList.remove('flex'); };
-
-        // بار السلايدر
-        const slider = document.getElementById('slider');
-        const bar = document.getElementById('strengthBar');
-
-        function updateBar() {
-            const max = slider.scrollWidth - slider.clientWidth;
-            const progress = max > 0 ? slider.scrollLeft / max : 0;
-            const thumb = Math.max(slider.clientWidth / slider.scrollWidth, 0.15);
-            bar.style.width = `${thumb * 100}%`;
-            bar.style.marginLeft = `${progress * (100 - thumb * 100)}%`;
-        }
-
-        slider.addEventListener('scroll', updateBar);
-        window.addEventListener('resize', updateBar);
-        updateBar();
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
