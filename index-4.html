@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotlight - Projects</title>
+    <script src="https://kit.fontawesome.com/5cd3c2f996.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <header id="header"
+        class="w-full flex items-center transition-all  justify-between px-4 md:px-16 py-4 md:py-6 fixed top-0 left-0 z-50">
+        <div class="w-12 md:w-16">
+            <img id="logoImg" src="img/icon 1@2x.png" alt="صورة لوغو ">
+        </div>
+
+        <nav class="hidden md:flex items-center gap-1 bg-black/60 backdrop-blur-md rounded-2xl px-4 lg:px-10 py-3">
+            <a href="index.html" class="px-3 lg:px-4 py-2 text-white hover:text-pink-600 transition">Home</a>
+            <a href="index-5.html" class="px-3 lg:px-4 py-2 text-white hover:text-pink-600 transition">About us</a>
+            <a href="#" class="px-3 lg:px-4 py-2 text-white hover:text-pink-600 transition">Projects</a>
+            <a href="index-2.html" class="px-3 lg:px-4 py-2 text-white hover:text-pink-600 transition">Services</a>
+            <a href="index-6.html" class="px-3 lg:px-4 py-2 text-white hover:text-pink-600 transition">Contact</a>
+        </nav>
+
+        <div class="btn hidden md:block">
+            <button class="text-white hover:text-pink-600 transition">NL|EN</button>
+        </div>
+
+        <button id="menuBtn"
+            class="md:hidden text-white bg-black/60 rounded-xl w-10 h-10 flex items-center justify-center">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </header>
+
+
+    <div id="mobileMenu"
+        class="hidden fixed inset-0 z-[60] bg-pink-600 backdrop-blur-md flex-col items-center justify-center gap-8 text-2xl md:hidden">
+        <button id="closeBtn" aria-label="Close menu"
+            class="absolute top-4 right-4 text-white bg-white/10 rounded-xl w-10 h-10 flex items-center justify-center">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <a href="index.html" class="text-white ">Home</a>
+        <a href="insex-5.html" class="text-white ">About us</a>
+        <a href="#" class="text-white">Projects</a>
+        <a href="index-2.html" class="text-white">Services</a>
+        <a href="index-6.html" class="text-white">Contact</a>
+        <button class="text-white  transition text-lg">NL|EN</button>
+    </div>
+    <section
+        class="bg-cover bg-no-repeat bg-center flex items-center justify-start relative min-h-[70vh] w-full px-6 md:px-16 pt-28 pb-12"
+        style="background-image: url('img/Gemini_Generated_Image_xbaucqxbaucqxbau 1.png');">
+
+        <div class="flex items-start justify-start flex-col gap-8 md:gap-12">
+            <div class="w-full">
+                <p
+                    class="font-montserrat text-black [-webkit-text-stroke:1px_#D41E72] text-4xl md:text-5xl font-black uppercase leading-tight tracking-tight mb-6">
+                    Our Projects
+                </p>
+
+                <p class="text-white max-w-xl text-base md:text-xl">Discover a selection of our completed projects.
+                    Built with precision, powered by expertise.</p>
+            </div>
+
+            <div class="text-white flex flex-col sm:flex-row flex-wrap gap-4 sm:gap-x-10">
+                <div class="flex items-center gap-3">
+                    <div class="w-11">
+                        <img src="img/Clip path group.png" alt="Projects icon">
+                    </div>
+                    <div>
+                        <h3 class="font-bold">500+</h3>
+                        <p class="text-xs">Projects Completed</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3">
+                    <div class="w-11">
+                        <img src="img/Group 1000004631 (9).png" alt="Experience icon">
+                    </div>
+                    <div>
+                        <h3 class="font-bold">12+</h3>
+                        <p class="text-xs">Years Experience</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3">
+                    <div class="w-11">
+                        <img src="img/Group 1000004631 (10).png" alt="Support icon">
+                    </div>
+                    <div>
+                        <h3 class="font-bold">24/7</h3>
+                        <p class="text-xs">Support</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="flex items-center justify-center flex-wrap gap-3 px-6 md:px-16 py-8 md:py-12">
+        <button
+            class="rounded-lg bg-white shadow px-4 py-3 md:py-4 text-sm font-medium hover:text-white hover:bg-[#D41E72] transition">
+            <i class="fa-solid fa-border-all"></i> All
+        </button>
+        <button
+            class="rounded-lg bg-white shadow px-4 md:px-6 py-3 md:py-4 text-sm font-medium hover:text-white hover:bg-[#D41E72] transition">
+            <i class="fa-solid fa-layer-group"></i> New construction
+        </button>
+        <button
+            class="rounded-lg bg-white shadow px-4 md:px-6 py-3 md:py-4 text-sm font-medium hover:text-white hover:bg-[#D41E72] transition">
+            <i class="fa-solid fa-house-chimney-window"></i> Renovation
+        </button>
+        <button
+            class="rounded-lg bg-white shadow px-4 md:px-6 py-3 md:py-4 text-sm font-medium hover:text-white hover:bg-[#D41E72] transition">
+            <i class="fa-solid fa-solar-panel"></i> Solar Panels
+        </button>
+        <button
+            class="rounded-lg bg-white shadow px-4 md:px-6 py-3 md:py-4 text-sm font-medium hover:text-white hover:bg-[#D41E72] transition">
+            <i class="fa-solid fa-charging-station"></i> Charging Stations
+        </button>
+        <button
+            class="rounded-lg bg-white shadow px-4 md:px-6 py-3 md:py-4 text-sm font-medium hover:text-white hover:bg-[#D41E72] transition">
+            <i class="fa-solid fa-phone"></i> Breakdown Service
+        </button>
+        <button
+            class="rounded-lg bg-white shadow px-4 md:px-6 py-3 md:py-4 text-sm font-medium hover:text-white hover:bg-[#D41E72] transition">
+            <i class="fa-solid fa-screwdriver-wrench"></i> Electricity Installation
+        </button>
+    </div>
+
+    <div class="px-6 md:px-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <div class="w-full pb-3 shadow rounded-xl hover:shadow-2xl transition overflow-hidden">
+            <img src="img/Gemini_Generated_Image_xbaucqxbaucqxbau 1.png" alt="Modern villa in Breda"
+                class="w-full h-48 object-cover">
+            <h3 class="font-bold text-lg p-3">Modern Villa – Breda</h3>
+            <p class="text-sm font-sans px-3 pb-3">Complete electrical installation for a luxury new-build villa.</p>
+            <a href="index-7.html" class="text-[#D41E72] px-3 text-lg">Learn more</a>
+        </div>
+
+        <div class="w-full pb-3 shadow rounded-xl hover:shadow-2xl transition overflow-hidden">
+            <img src="img/Gemini_Generated_Image_qsq82mqsq82mqsq8 1@2x (1).png" alt="Residential renovation"
+                class="w-full h-48 object-cover">
+            <h3 class="font-bold text-lg p-3">Residential Renovation</h3>
+            <p class="text-sm font-sans px-3 pb-3">Full electrical upgrade for improved safety and efficiency.</p>
+            <a href="index-7.html" class="text-[#D41E72] px-3 text-lg">Learn more</a>
+        </div>
+
+        <div class="w-full pb-3 shadow rounded-xl hover:shadow-2xl transition overflow-hidden">
+            <img src="img/Gemini_Generated_Image_xbaucqxbaucqxbau 1.png" alt="Modern villa in Breda"
+                class="w-full h-48 object-cover">
+            <h3 class="font-bold text-lg p-3">Modern Villa – Breda</h3>
+            <p class="text-sm font-sans px-3 pb-3">Complete electrical installation for a luxury new-build villa.</p>
+            <a href="index-7.html" class="text-[#D41E72] px-3 text-lg">Learn more</a>
+        </div>
+
+        <div class="w-full pb-3 shadow rounded-xl hover:shadow-2xl transition overflow-hidden">
+            <img src="img/Gemini_Generated_Image_xbaucqxbaucqxbau 1.png" alt="Modern villa in Breda"
+                class="w-full h-48 object-cover">
+            <h3 class="font-bold text-lg p-3">Modern Villa – Breda</h3>
+            <p class="text-sm font-sans px-3 pb-3">Complete electrical installation for a luxury new-build villa.</p>
+            <a href="index-7.html" class="text-[#D41E72] px-3 text-lg">Learn more</a>
+        </div>
+
+        <div class="w-full pb-3 shadow rounded-xl hover:shadow-2xl transition overflow-hidden">
+            <img src="img/Gemini_Generated_Image_qsq82mqsq82mqsq8 1@2x (1).png" alt="Residential renovation"
+                class="w-full h-48 object-cover">
+            <h3 class="font-bold text-lg p-3">Residential Renovation</h3>
+            <p class="text-sm font-sans px-3 pb-3">Full electrical upgrade for improved safety and efficiency.</p>
+            <a href="index-7.html" class="text-[#D41E72] px-3 text-lg">Learn more</a>
+        </div>
+
+        <div class="w-full pb-3 shadow rounded-xl hover:shadow-2xl transition overflow-hidden">
+            <img src="img/Gemini_Generated_Image_xbaucqxbaucqxbau 1.png" alt="Modern villa in Breda"
+                class="w-full h-48 object-cover">
+            <h3 class="font-bold text-lg p-3">Modern Villa – Breda</h3>
+            <p class="text-sm font-sans px-3 pb-3">Complete electrical installation for a luxury new-build villa.</p>
+            <a href="index-7.html" class="text-[#D41E72] px-3 text-lg">Learn more</a>
+        </div>
+    </div>
+
+
+    <div class="flex items-center justify-center px-6 py-12 md:py-16">
+        <button class="px-6 py-3 bg-white border rounded-lg">
+            Load More Projects <i class="fa-solid fa-caret-down"></i>
+        </button>
+    </div>
+
+    <div id="slider"
+        class="flex items-center lg:justify-center gap-6 md:gap-12 px-6 py-3 overflow-x-auto snap-x snap-mandatory [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+        <div class="shrink-0 snap-center"><video src="https://www.spotlightelektrotechniek.com/deins/vid_new3.mp4"
+                controls class="w-64 h-96 md:w-80 md:h-[460px] lg:w-100 lg:h-100 rounded-2xl"></video></div>
+        <div class="shrink-0 snap-center"><video src="https://www.spotlightelektrotechniek.com/deins/vid_new4.mp4"
+                controls class="w-64 h-96 md:w-80 md:h-[460px] lg:w-100 lg:h-100 rounded-2xl"></video></div>
+        <div class="shrink-0 snap-center"><video src="https://www.spotlightelektrotechniek.com/deins/vid_new5.mp4"
+                controls class="w-64 h-96 md:w-80 md:h-[460px] lg:w-100 lg:h-100 rounded-2xl"></video></div>
+    </div>
+
+    <div class="w-[90%] max-w-3xl mx-auto h-2 rounded-full bg-slate-200 overflow-hidden mt-6 mb-20">
+        <div id="strengthBar" class="h-full w-0 bg-[#C2185B] rounded-full transition-all duration-300"></div>
+    </div>
+
+
+    <section class="bg-cover bg-no-repeat bg-center py-16 md:py-24 px-6 md:px-16"
+        style="background-image: url('img/Rectangle 23861 (1).png');">
+
+        <div class="flex flex-col lg:flex-row items-center justify-between gap-10">
+            <div class="max-w-xl">
+
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">READY TO START YOUR PROJECT?</h2>
+                <p class="text-lg md:text-2xl text-white">Let's build something great together. Our team is ready to
+                    bring your ideas to life.</p>
+            </div>
+            <div class="flex items-center justify-center flex-col gap-6 md:gap-12">
+                <a href="tel:+31622331370" class="text-white border px-6 py-3 rounded-xl"><i
+                        class="fa-solid fa-phone-volume p-2"></i> M. +31622331370</a>
+                <a href="index-6.html" class="text-[#D41E72] bg-white px-4 py-2 font-bold rounded-lg">Contact</a>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="bg-linear-to-b from-[#C2185B] via-[#7A1040] to-[#3A0A1E] px-6 md:px-16 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-0 mb-12">
+            <div
+                class="text-white w-full lg:w-90 lg:border-r lg:border-white flex items-center justify-center flex-col gap-4">
+                <img src="img/slazzer-preview-m8an4 2.png" alt="Spotlight Elektrotechniek" class="w-56 md:w-70">
+                <p class="w-full max-w-70 text-sm">Spotlight delivers advanced electrical, solar, and smart charging
+                    solutions for modern projects.</p>
+            </div>
+            <div class="flex items-start flex-col gap-4">
+                <div class="flex items-center gap-4">
+                    <img src="img/Group 1000004631 (7).png" alt="" class="w-8">
+                    <h3 class="text-white font-bold">Contact Us</h3>
+                </div>
+                <div class="flex items-start flex-col gap-6">
+                    <a href="https://maps.google.com/?q=Korte+Brugstraat+Etten-Leur" class="text-white"><i
+                            class="fa-solid fa-location-dot text-white w-5 text-center"></i> Korte Brugstraat 4871 XT
+                        Etten-Leur</a>
+                    <a href="tel:+31622331370" class="text-white"><i
+                            class="fa-solid fa-phone text-white w-5 text-center"></i> M. +31622331370</a>
+
+                    <a href="mailto:info@spotlightelektrotechniek.nl" class="text-white break-all"><i
+                            class="fa-solid fa-envelope text-white w-5 text-center"></i> E.
+                        info@spotlightelektrotechniek.nl</a>
+                </div>
+                <div class="rounded-4xl border border-[#D41E72] p-4 text-center">
+                    <a href="index-6.html" class="text-white text-sm">Get in touch <i
+                            class="fa-solid fa-arrow-right-long text-[#D41E72] bg-[#FFD5E8] p-2 text-center rounded-4xl"></i></a>
+                </div>
+            </div>
+            <div class="flex items-start flex-col gap-4">
+                <div class="flex items-center gap-4">
+                    <img src="img/Group 1000004631 (8).png" alt="" class="w-8">
+                    <h3 class="text-white font-bold">Company Links</h3>
+                </div>
+                <div class="flex items-start flex-col gap-5">
+                    <a href="index.html" class="text-white"><i class="fa-solid fa-angle-right"></i> Home</a>
+                    <a href="index-5.html" class="text-white"><i class="fa-solid fa-angle-right"></i> About us</a>
+                    <a href="index-4.html" class="text-white"><i class="fa-solid fa-angle-right"></i> Projects</a>
+                    <a href="index-2.html" class="text-white"><i class="fa-solid fa-angle-right"></i> Services</a>
+                    <a href="index-6.html" class="text-white"><i class="fa-solid fa-angle-right"></i> Contact</a>
+                </div>
+            </div>
+        </div>
+        <div
+            class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 rounded-3xl bg-linear-to-r from-[#3A0A1E] to-[#D81B72] p-6 md:p-8">
+            <div class="text-white flex flex-col gap-4 md:pr-12">
+                <p class="text-2xl font-semibold">Follow us</p>
+                <div class="flex gap-6 text-3xl">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="md:col-span-2 text-white flex flex-col gap-4 md:pl-12">
+                <div class="flex items-center gap-3">
+                    <span class="w-10 h-10 rounded-full bg-pink-200 text-pink-700 flex items-center justify-center">
+                        <i class="fa-regular fa-clock"></i>
+                    </span>
+                    <h3 class="text-2xl font-semibold">Opening hours</h3>
+                </div>
+                <p>Monday to Friday: <span class="font-bold">08:00-17:00</span></p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

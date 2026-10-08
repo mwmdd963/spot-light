@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotlight</title>
+    <script src="https://kit.fontawesome.com/5cd3c2f996.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+
+    <header id="header"
+        class="w-full flex items-center justify-between px-4 md:px-16 py-4 md:py-6 fixed top-0 left-0 z-50 bg-transparent transition-all duration-500 ease-in-out">
+        <div class="w-12 md:w-16">
+            <img id="logoImg" src="img/icon 1@2x.png" alt="لوغو" style="transition: filter 0.5s;">
+        </div>
+
+        <nav class="hidden md:flex items-center gap-1 bg-black/60 backdrop-blur-md rounded-2xl px-4 lg:px-10 py-3">
+            <a href="index.html" class="px-3 lg:px-4 py-2 text-white hover:text-pink-600 transition">Home</a>
+            <a href="index-5.html" class="px-3 lg:px-4 py-2 text-white hover:text-pink-600 transition">About us</a>
+            <a href="index-4.html" class="px-3 lg:px-4 py-2 text-white hover:text-pink-600 transition">Projects</a>
+            <a href="index-2.html" class="px-3 lg:px-4 py-2 text-white hover:text-pink-600 transition">Services</a>
+            <a href="index-6.html" class="px-3 lg:px-4 py-2 text-white hover:text-pink-600 transition">Contact</a>
+        </nav>
+
+        <div class="btn hidden md:block">
+            <button class="text-white hover:text-pink-600 transition">NL|EN</button>
+        </div>
+
+        <button id="menuBtn"
+            class="md:hidden text-white bg-black/60 rounded-xl w-10 h-10 flex items-center justify-center">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </header>
+
+    <div id="mobileMenu"
+        class="hidden fixed inset-0 z-[60] bg-pink-600 backdrop-blur-md flex-col items-center justify-center gap-8 text-2xl md:hidden">
+        <button id="closeBtn" aria-label="Close menu"
+            class="absolute top-4 right-4 text-white bg-white/10 rounded-xl w-10 h-10 flex items-center justify-center">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <a href="index.html" class="text-white">Home</a>
+        <a href="index-5.html" class="text-white">About us</a>
+        <a href="index-4.html" class="text-white">Projects</a>
+        <a href="index-2.html" class="text-white">Services</a>
+        <a href="index-6.html" class="text-white">Contact</a>
+        <button class="text-white transition text-lg">NL|EN</button>
+    </div>
+
+    
+
+    <section
+        class="bg-cover bg-no-repeat bg-center flex items-end px-6 md:px-16 pt-32 pb-10 relative min-h-[70vh] w-full"
+        style="background-image: url('img/Group 1000004706.png');">
+
+        <div class="flex flex-col gap-6 md:gap-8">
+
+            
+
+            <div>
+                <h1 class="text-white font-black uppercase text-3xl md:text-5xl leading-tight mb-4">Modern Villa –
+                    Breda</h1>
+                <p class="text-white max-w-xl text-base md:text-lg">A luxury new-build villa equipped with advanced
+                    electrical systems for maximum comfort, safety and energy efficiency.</p>
+            </div>
+
+            <div class="text-white flex flex-col sm:flex-row flex-wrap gap-4 sm:gap-x-10">
+                <div class="flex items-center gap-3">
+                    <i class="fa-regular fa-calendar text-[#D41E72] text-xl"></i>
+                    <div>
+                        <h3 class="font-bold">2025</h3>
+                        <p class="text-xs">Project year</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3">
+                    <i class="fa-solid fa-location-dot text-[#D41E72] text-xl"></i>
+                    <div>
+                        <h3 class="font-bold">Breda, Netherlands</h3>
+                        <p class="text-xs">Location</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3">
+                    <i class="fa-solid fa-building text-[#D41E72] text-xl"></i>
+                    <div>
+                        <h3 class="font-bold">New Construction</h3>
+                        <p class="text-xs">Service</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <section class="px-6 md:px-16 py-12 md:py-16">
+        <h2 class="font-bold text-2xl md:text-4xl mb-8 uppercase">Before & After Details</h2>
+
+        <div id="slider" class="flex overflow-x-auto snap-x snap-mandatory gap-6" style="scrollbar-width: none;">
+
+            
+            <div
+                class="relative shrink-0 w-full snap-center grid grid-cols-1 sm:grid-cols-2 rounded-2xl overflow-hidden">
+                <div class="relative">
+                    <img src="img/Gemini_Generated_Image_xhfxy1xhfxy1xhfx 3.png" alt="صورة" class="w-full h-56 md:h-96 object-cover">
+                    <span class="absolute top-4 left-4 bg-black/60 text-white text-xs px-3 py-1 rounded">Before</span>
+                </div>
+                <div class="relative">
+                    <img src="img/Gemini_Generated_Image_xhfxy1xhfxy1xhfx 2 (1).png" alt="صورة" class="w-full h-56 md:h-96 object-cover">
+                    <span class="absolute top-4 left-4 bg-[#D41E72] text-white text-xs px-3 py-1 rounded">After</span>
+                </div>
+                <div
+                    class="hidden sm:flex absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white shadow items-center justify-center text-xs">
+                    <i class="fa-solid fa-angle-left"></i><i class="fa-solid fa-angle-right"></i>
+                </div>
+            </div>
+
+            
+            <div
+                class="relative shrink-0 w-full snap-center grid grid-cols-1 sm:grid-cols-2 rounded-2xl overflow-hidden">
+                <div class="relative">
+                    <img src="img/Gemini_Generated_Image_xhfxy1xhfxy1xhfx 3.png" alt="صورة" class="w-full h-56 md:h-96 object-cover">
+                    <span class="absolute top-4 left-4 bg-black/60 text-white text-xs px-3 py-1 rounded">Before</span>
+                </div>
+                <div class="relative">
+                    <img src="img/Gemini_Generated_Image_xhfxy1xhfxy1xhfx 2 (1).png" alt="صورة" class="w-full h-56 md:h-96 object-cover">
+                    <span class="absolute top-4 left-4 bg-[#D41E72] text-white text-xs px-3 py-1 rounded">After</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-40 h-1 bg-gray-200 rounded-full mx-auto mt-6 overflow-hidden">
+            <div id="strengthBar" class="h-1 bg-[#D41E72] rounded-full"></div>
+        </div>
+    </section>
+
+    
+
+    <section class="px-6 md:px-16 pb-12 md:pb-16">
+        <h2 class="font-bold text-2xl md:text-4xl mb-8 uppercase">Project Overview</h2>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+
+            <div>
+                <p class="text-[#D41E72] font-semibold mb-2">From blueprint to a smart living experience.</p>
+                <p class="text-[#616161] mb-6">This modern villa project in Breda required a complete electrical design
+                    and installation from the ground up. Our team delivered a future-ready solution with smart
+                    electrical energy and top-level safety.</p>
+
+                <ul class="flex flex-col gap-2 text-[#616161] text-sm">
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-[#D41E72]"></i>
+                        Complete electrical design & planning.</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-[#D41E72]"></i> Full
+                        wiring & installation.</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-[#D41E72]"></i> Smart
+                        home automation system.</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-[#D41E72]"></i>
+                        Energy-efficient lighting solutions.</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-[#D41E72]"></i>
+                        Security & CCTV system installation.</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-[#D41E72]"></i>
+                        Heating & climate control integration.</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-[#D41E72]"></i> Solar
+                        panels & energy monitoring.</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-[#D41E72]"></i>
+                        Testing & final inspection.</li>
+                </ul>
+            </div>
+
+            <div class="grid grid-cols-2 gap-4 bg-white rounded-2xl shadow p-6 md:p-8">
+                <div class="flex items-center gap-3">
+                    <span class="w-10 h-10 rounded-lg bg-pink-100 text-[#D41E72] flex items-center justify-center"><i
+                            class="fa-solid fa-house"></i></span>
+                    <div>
+                        <h3 class="font-bold">450 m²</h3>
+                        <p class="text-xs text-[#777]">Total area</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3">
+                    <span class="w-10 h-10 rounded-lg bg-pink-100 text-[#D41E72] flex items-center justify-center"><i
+                            class="fa-regular fa-calendar"></i></span>
+                    <div>
+                        <h3 class="font-bold">8 Weeks</h3>
+                        <p class="text-xs text-[#777]">Project duration</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3">
+                    <span class="w-10 h-10 rounded-lg bg-pink-100 text-[#D41E72] flex items-center justify-center"><i
+                            class="fa-solid fa-lightbulb"></i></span>
+                    <div>
+                        <h3 class="font-bold">100%</h3>
+                        <p class="text-xs text-[#777]">Smart controlled</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3">
+                    <span class="w-10 h-10 rounded-lg bg-pink-100 text-[#D41E72] flex items-center justify-center"><i
+                            class="fa-solid fa-phone-volume"></i></span>
+                    <div>
+                        <h3 class="font-bold">24/7</h3>
+                        <p class="text-xs text-[#777]">Support</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <section class="px-6 md:px-16 pb-12 md:pb-16">
+        <h2 class="font-bold text-2xl md:text-4xl mb-8 uppercase">Videos</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <video controls poster="img/video-1.png" class="w-full aspect-[3/4] object-cover rounded-2xl bg-black">
+                <source src="videos/video-1.mp4" type="video/mp4">
+            </video>
+            <video controls poster="img/video-2.png" class="w-full aspect-[3/4] object-cover rounded-2xl bg-black">
+                <source src="videos/video-2.mp4" type="video/mp4">
+            </video>
+            <video controls poster="img/video-3.png" class="w-full aspect-[3/4] object-cover rounded-2xl bg-black">
+                <source src="videos/video-3.mp4" type="video/mp4">
+            </video>
+            <video controls poster="img/video-4.png" class="w-full aspect-[3/4] object-cover rounded-2xl bg-black">
+                <source src="videos/video-4.mp4" type="video/mp4">
+            </video>
+            <video controls poster="img/video-5.png" class="w-full aspect-[3/4] object-cover rounded-2xl bg-black">
+                <source src="videos/video-5.mp4" type="video/mp4">
+            </video>
+            <video controls poster="img/video-6.png" class="w-full aspect-[3/4] object-cover rounded-2xl bg-black">
+                <source src="videos/video-6.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    
+
+    <section class="bg-cover bg-no-repeat bg-center py-16 md:py-24 px-6 md:px-16"
+        style="background-image: url('img/Rectangle 23861 (1).png');">
+        <div class="flex flex-col lg:flex-row items-center justify-between gap-10">
+            <div class="max-w-xl">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">READY TO START YOUR PROJECT?</h2>
+                <p class="text-lg md:text-2xl text-white">Let's build something great together. Our team is ready to
+                    bring your ideas to life.</p>
+            </div>
+            <div class="flex items-center justify-center flex-col gap-6 md:gap-12">
+                <a href="tel:+31622331370" class="text-white border px-6 py-3 rounded-xl"><i
+                        class="fa-solid fa-phone-volume p-2"></i> M. +31622331370</a>
+                <a href="index-6.html" class="text-[#D41E72] bg-white px-4 py-2 font-bold rounded-lg">Contact</a>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <footer class="bg-linear-to-b from-[#C2185B] via-[#7A1040] to-[#3A0A1E] px-6 md:px-16 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-0 mb-12">
+
+            <div
+                class="text-white w-full lg:w-90 lg:border-r lg:border-white flex items-center justify-center flex-col gap-4">
+                <img src="img/slazzer-preview-m8an4 2.png" alt="لوغو" class="w-56 md:w-70">
+                <p class="w-full max-w-70 text-sm">Spotlight delivers advanced electrical, solar, and smart charging
+                    solutions for modern projects.</p>
+            </div>
+
+            <div class="flex items-start justify-self-start flex-col gap-4">
+                <div class="flex items-center gap-4">
+                    <img src="img/Group 1000004631 (7).png" alt="" class="w-8">
+                    <h3 class="text-white font-bold">Contact Us</h3>
+                </div>
+                <div class="flex items-start justify-center flex-col gap-6">
+                    <a href="https://maps.google.com/?q=Korte+Brugstraat+Etten-Leur" class="text-white"><i
+                            class="fa-solid fa-location-dot text-white w-5 text-center"></i> Korte Brugstraat4871 XT
+                        Etten-Leur</a>
+                    <a href="tel:+31622331370" class="text-white"><i
+                            class="fa-solid fa-phone text-white w-5 text-center"></i> M. +31622331370</a>
+                    <a href="mailto:info@spotlightelektrotechniek.nl" class="text-white break-all"><i
+                            class="fa-solid fa-envelope text-white w-5 text-center"></i> E.
+                        info@spotlightelektrotechniek.nl</a>
+                </div>
+                <div class="rounded-4xl border border-[#D41E72] p-4 text-center">
+                    <a href="index-6.html" class="text-white text-sm">Get in touch <i
+                            class="fa-solid fa-arrow-right-long text-[#D41E72] bg-[#FFD5E8] p-2 text-center rounded-4xl"></i></a>
+                </div>
+            </div>
+
+            <div class="flex items-start justify-start flex-col gap-4">
+                <div class="flex items-center gap-4">
+                    <img src="img/Group 1000004631 (8).png" alt="" class="w-8">
+                    <h3 class="text-white font-bold">Company Links</h3>
+                </div>
+                <div class="flex items-start justify-center flex-col gap-5">
+                    <a href="index.html" class="text-white"><i class="fa-solid fa-angle-right"></i> Home</a>
+                    <a href="index-5.html" class="text-white"><i class="fa-solid fa-angle-right"></i> About us</a>
+                    <a href="index-4.html" class="text-white"><i class="fa-solid fa-angle-right"></i> Projects</a>
+                    <a href="index-2.html" class="text-white"><i class="fa-solid fa-angle-right"></i> Services</a>
+                    <a href="index-6.html" class="text-white"><i class="fa-solid fa-angle-right"></i> Contact</a>
+                </div>
+            </div>
+        </div>
+
+        <div
+            class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 rounded-3xl bg-linear-to-r from-[#3A0A1E] to-[#D81B72] p-6 md:p-8">
+            <div class="text-white flex flex-col gap-4 md:pr-12">
+                <p class="text-2xl font-semibold">Follow us</p>
+                <div class="flex gap-6 text-3xl">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="md:col-span-2 text-white flex flex-col gap-4 md:pl-12">
+                <div class="flex items-center gap-3">
+                    <span class="w-10 h-10 rounded-full bg-pink-200 text-pink-700 flex items-center justify-center">
+                        <i class="fa-regular fa-clock"></i>
+                    </span>
+                    <h3 class="text-2xl font-semibold">Opening hours</h3>
+                </div>
+                <p>Monday to Friday: <span class="font-bold">08:00-17:00</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

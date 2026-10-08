@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotlight</title>
+    <script src="https://kit.fontawesome.com/5cd3c2f996.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+
+    <header id="header"
+        class="w-full flex items-center transition-all  justify-between px-4 md:px-16 py-4 md:py-6 fixed top-0 left-0 z-50">
+        <div class="w-12 md:w-16">
+            <img id="logoImg" src="img/icon 1@2x.png" alt="صورة لوغو ">
+        </div>
+
+        <nav class="hidden md:flex items-center gap-1 bg-black/60 backdrop-blur-md rounded-2xl px-4 lg:px-10 py-3">
+            <a href="#" class="px-3 lg:px-4 py-2 text-white hover:text-pink-600 transition">Home</a>
+            <a href="index-5.html" class="px-3 lg:px-4 py-2 text-white hover:text-pink-600 transition">About us</a>
+            <a href="index-4.html" class="px-3 lg:px-4 py-2 text-white hover:text-pink-600 transition">Projects</a>
+            <a href="index-2.html" class="px-3 lg:px-4 py-2 text-white hover:text-pink-600 transition">Services</a>
+            <a href="index-6.html" class="px-3 lg:px-4 py-2 text-white hover:text-pink-600 transition">Contact</a>
+        </nav>
+
+        <div class="btn hidden md:block">
+            <button class="text-white hover:text-pink-600 transition">NL|EN</button>
+        </div>
+
+        <button id="menuBtn"
+            class="md:hidden text-white bg-black/60 rounded-xl w-10 h-10 flex items-center justify-center">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </header>
+
+
+    <div id="mobileMenu"
+        class="hidden fixed inset-0 z-[60] bg-pink-600 backdrop-blur-md flex-col items-center justify-center gap-8 text-2xl md:hidden">
+        <button id="closeBtn" aria-label="Close menu"
+            class="absolute top-4 right-4 text-white bg-white/10 rounded-xl w-10 h-10 flex items-center justify-center">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <a href="index.html" class="text-white ">Home</a>
+        <a href="insex-5.html" class="text-white ">About us</a>
+        <a href="index-4.html" class="text-white">Projects</a>
+        <a href="index-2.html" class="text-white">Services</a>
+        <a href="index-6.html" class="text-white">Contact</a>
+        <button class="text-white  transition text-lg">NL|EN</button>
+    </div>
+    <!-- ------------------------------------------------------------------ -->
+    <section
+        class="bg-cover bg-no-repeat bg-center min-h-[60vh] md:min-h-[70vh] flex items-center px-6 md:px-16 pt-28 pb-12"
+        style="background-image: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.5), rgba(0,0,0,0.2)), url('img/Gemini_Generated_Image_5qsxob5qsxob5qsx 1.png');">
+
+        <div class="w-full max-w-2xl">
+            <p
+                class="font-montserrat text-black [-webkit-text-stroke:1px_#D41E72] text-4xl md:text-5xl font-black uppercase leading-tight tracking-tight mb-6">
+                Contact Us
+            </p>
+            <p class="text-white text-base md:text-xl">
+                Whether you need electrical support, a project quote, or want to join our team,
+                we're ready to assist you. Send us a message and we'll get back to you as soon as possible.
+            </p>
+        </div>
+    </section>
+
+
+
+    <!-- ---------------------------------------------------------------------- -->
+    <div class="flex flex-col lg:flex-row items-center lg:items-start justify-around gap-10 px-6 md:px-16 pt-28 pb-16">
+
+        <div class="flex items-start justify-start flex-col gap-8">
+            <div class="font-bold text-4xl">
+                <h2>CONTACT INFORMATION</h2>
+            </div>
+            <div class="flex items-start justify-center flex-col gap-6">
+                <a href="https://maps.google.com/?q=Korte+Brugstraat+Etten-Leur" class="text-[#616161] text-lg">
+                    <i class="fa-solid fa-location-dot text-pink-600 w-5 text-center"></i>
+                    Korte Brugstraat 4871 XT Etten-Leur</a>
+                <a href="tel:+31622331370" class="text-[#616161] text-lg">
+                    <i class="fa-solid fa-phone text-pink-600 w-5 text-center"></i> M. +31622331370</a>
+                <a href="mailto:info@spotlightelektrotechniek.nl" class="text-[#616161] text-lg">
+                    <i class="fa-solid fa-envelope text-pink-600 w-5 text-center"></i> E.
+                    info@spotlightelektrotechniek.nl</a>
+                <p class="text-lg text-[#616161]">
+                    <i class="fa-regular fa-clock text-pink-600 w-5 text-center"></i> Monday to Friday: 08:00-17:00
+                </p>
+            </div>
+
+            <div class="flex flex-col gap-4">
+                <p class="text-4xl text-black font-bold">Follow us</p>
+                <div class="flex gap-6 text-3xl">
+                    <a href="#"><i class="fa-brands fa-instagram text-pink-600"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f text-pink-600"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok text-pink-600"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in text-pink-600"></i></a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="w-full max-w-150 shadow rounded-2xl p-6 md:p-8">
+
+            <h2 class="text-center text-4xl font-bold mb-6">SEND US A MESSAGE</h2>
+
+            <form action="" method="post" class="grid grid-cols-1 gap-x-4 gap-y-5 sm:grid-cols-2">
+
+                <div class="flex flex-col">
+                    <label for="name" class="mb-2 text-[#616161]">Full name</label>
+                    <input type="text" name="name" id="name" placeholder="Full name" required
+                        class="border border-[#616161] rounded-lg px-3 w-full h-[46px] placeholder:text-[#D9D9D9] outline-none focus:border-pink-600">
+                </div>
+
+                <div class="flex flex-col">
+                    <label for="tel" class="mb-2 text-[#616161]">Phone number</label>
+                    <input type="tel" name="tel" id="tel" placeholder="+963 999 999 999" required
+                        class="border border-[#616161] rounded-lg px-3 w-full h-[46px] placeholder:text-[#D9D9D9] outline-none focus:border-pink-600">
+                </div>
+
+                <div class="flex flex-col">
+                    <label for="email" class="mb-2 text-[#616161]">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="E-mail" required
+                        class="border border-[#616161] rounded-lg px-3 w-full h-[46px] placeholder:text-[#D9D9D9] outline-none focus:border-pink-600">
+                </div>
+
+                <div class="flex flex-col">
+                    <label for="region" class="mb-2 text-[#616161]">Region / Province</label>
+                    <input type="text" name="region" id="region" placeholder="Region" required
+                        class="border border-[#616161] rounded-lg px-3 w-full h-[46px] placeholder:text-[#D9D9D9] outline-none focus:border-pink-600">
+                </div>
+
+                <div class="flex flex-col">
+                    <label for="service" class="mb-2 text-[#616161]">Service Type</label>
+                    <select name="service" id="service" required
+                        class="h-[46px] w-full rounded-lg border border-[#616161] bg-white px-3 text-[#616161] outline-none focus:border-pink-600">
+                        <option value="" selected disabled>Service Type</option>
+                        <option>New construction</option>
+                        <option>Renovation</option>
+                        <option>Solar Panels</option>
+                    </select>
+                </div>
+
+                <div class="flex flex-col">
+                    <label for="time" class="mb-2 text-[#616161]">Preferred time</label>
+                    <select name="time" id="time"
+                        class="h-[46px] w-full rounded-lg border border-[#616161] bg-white px-3 text-[#616161] outline-none focus:border-pink-600">
+                        <option value="" selected disabled>Preferred time</option>
+                        <option>Morning</option>
+                        <option>Afternoon</option>
+                    </select>
+                </div>
+
+                <div class="sm:col-span-2">
+                    <textarea name="message" placeholder="Your message..."
+                        class="h-36 w-full resize-none rounded-lg border border-[#616161] p-4 placeholder:text-[#D9D9D9] outline-none focus:border-pink-600"></textarea>
+                </div>
+
+                <button type="submit"
+                    class="sm:col-span-2 h-[46px] rounded-lg bg-[#D6246E] font-semibold text-white transition hover:bg-[#b81d5c]">
+                    Send
+                </button>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- --------------------------------------------------------------------- -->
+    <section class="px-6 md:px-16 py-16">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+
+
+            <div class="flex flex-col gap-4">
+                <h2 class="text-4xl md:text-5xl font-bold leading-tight">
+                    FREQUENTLY ASKED <br> QUESTIONS - FAQ
+                </h2>
+                <p class="text-[#616161] text-lg max-w-md">
+                    Find answers to common questions about our electrical services, projects and support.
+                </p>
+            </div>
+
+
+            <div class="flex flex-col">
+
+                <details class="group border-b border-pink-600 py-5">
+                    <summary
+                        class="flex items-center gap-3 cursor-pointer list-none text-lg text-[#616161] [&::-webkit-details-marker]:hidden">
+                        <i
+                            class="fa-solid fa-chevron-right text-pink-600 text-sm transition-transform group-open:rotate-90"></i>
+                        How quickly can you respond to a breakdown?
+                    </summary>
+                    <p class="mt-3 pl-7 text-[#616161]">
+                        We offer 24/7 emergency support and aim to respond as fast as possible, usually the same day.
+                    </p>
+                </details>
+
+                <details class="group border-b border-pink-600 py-5">
+                    <summary
+                        class="flex items-center gap-3 cursor-pointer list-none text-lg text-[#616161] [&::-webkit-details-marker]:hidden">
+                        <i
+                            class="fa-solid fa-chevron-right text-pink-600 text-sm transition-transform group-open:rotate-90"></i>
+                        Do you work with both companies and private customers?
+                    </summary>
+                    <p class="mt-3 pl-7 text-[#616161]">
+                        Yes, we accept orders large or small from both businesses and individuals.
+                    </p>
+                </details>
+
+                <details class="group border-b border-pink-600 py-5">
+                    <summary
+                        class="flex items-center gap-3 cursor-pointer list-none text-lg text-[#616161] [&::-webkit-details-marker]:hidden">
+                        <i
+                            class="fa-solid fa-chevron-right text-pink-600 text-sm transition-transform group-open:rotate-90"></i>
+                        Can you install solar panels and EV charging stations?
+                    </summary>
+                    <p class="mt-3 pl-7 text-[#616161]">
+                        Yes, we design and install solar systems and professional charging stations for homes and
+                        businesses.
+                    </p>
+                </details>
+
+                <details class="group border-b border-pink-600 py-5">
+                    <summary
+                        class="flex items-center gap-3 cursor-pointer list-none text-lg text-[#616161] [&::-webkit-details-marker]:hidden">
+                        <i
+                            class="fa-solid fa-chevron-right text-pink-600 text-sm transition-transform group-open:rotate-90"></i>
+                        How can I request a quote?
+                    </summary>
+                    <p class="mt-3 pl-7 text-[#616161]">
+                        Fill in the form above or call us on +31622331370 and we will get back to you as soon as
+                        possible.
+                    </p>
+                </details>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ----------------------------------------------------------------------- -->
+
+
+
+    <footer class="bg-linear-to-b from-[#C2185B] via-[#7A1040] to-[#3A0A1E] px-6 md:px-16 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-0 mb-12 ">
+
+            <div
+                class="text-white w-full lg:w-90 lg:border-r lg:border-white flex items-center justify-center flex-col gap-4">
+                <img src="img/slazzer-preview-m8an4 2.png" alt="صورة" class="w-56 md:w-70">
+                <p class="w-full max-w-70 text-sm">Spotlight delivers advanced electrical, solar, and smart charging
+                    solutions for
+                    modern projects.</p>
+            </div>
+            <div class="flex  items-start justify-self-start flex-col gap-4">
+                <div class="flex items-center gap-4">
+                    <img src="img/Group 1000004631 (7).png" alt="صورة" class="w-8">
+                    <h3 class="text-white font-bold ">Contact Us</h3>
+                </div>
+                <div class="flex items-start justify-center flex-col gap-6">
+                    <a href="" class="text-white"><i class="fa-solid fa-location-dot text-white w-5 text-center"></i>
+                        Korte Brugstraat4871 XT Etten-Leur</a>
+                    <a href="tel" class="text-white"><i class="fa-solid fa-phone text-white w-5 text-center"> </i> M.
+                        +31622331370</a>
+                    <a href="" class="text-white"><i class="fa-solid fa-envelope text-white w-5 text-center"></i> E.
+                        info@spotlightelektrotechniek.nl</a>
+                </div>
+                <div class=" rounded-4xl border border-[#D41E72] p-4 text-center  ">
+                    <a href="#" class="text-white text-sm ">Get in touch <i
+                            class="fa-solid fa-arrow-right-long text-[#D41E72]  bg-[#FFD5E8] p-2 text-center rounded-4xl "></i></a>
+                </div>
+            </div>
+            <div class="flex  items-start justify-start flex-col gap-4">
+                <div class="flex items-center gap-4">
+                    <img src="img/Group 1000004631 (8).png" alt="صورة" class="w-8">
+                    <h3 class="text-white font-bold ">Company Links</h3>
+                </div>
+                <div class="flex items-start justify-center flex-col gap-5">
+                    <a href="" class="text-white"><i class="fa-solid fa-angle-right"></i> Home</a>
+                    <a href="tel" class="text-white"><i class="fa-solid fa-angle-right"></i> About us</a>
+                    <a href="" class="text-white"><i class="fa-solid fa-angle-right"></i> projects</a>
+                    <a href="" class="text-white"><i class="fa-solid fa-angle-right"></i> Services</a>
+                    <a href="" class="text-white"><i class="fa-solid fa-angle-right"></i> Contact</a>
+                </div>
+            </div>
+        </div>
+        <div
+            class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 rounded-3xl bg-linear-to-r from-[#3A0A1E] to-[#D81B72] p-6 md:p-8">
+
+
+            <div class="text-white flex flex-col gap-4   md:pr-12">
+                <p class="text-2xl font-semibold">Follow us</p>
+                <div class="flex gap-6 text-3xl">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="md:col-span-2 text-white flex flex-col gap-4 md:pl-12">
+                <div class="flex items-center gap-3">
+                    <span class="w-10 h-10 rounded-full bg-pink-200 text-pink-700 flex items-center justify-center">
+                        <i class="fa-regular fa-clock"></i>
+                    </span>
+                    <h3 class="text-2xl font-semibold">Opening hours</h3>
+                </div>
+                <p>Monday to Friday: <span class="font-bold">08:00-17:00</span></p>
+            </div>
+
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
